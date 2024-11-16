@@ -1,0 +1,9 @@
+# directories
+.vs/
+bin/
+bin-int/
+CreateApplication/
+enc_temp_folder/
+
+#files
+*.user

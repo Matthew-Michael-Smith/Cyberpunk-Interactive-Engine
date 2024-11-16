@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DaredevilSOTH", "DaredevilSOTH\DaredevilSOTH.vcxproj", "{1D6A5053-D791-4343-B670-6FF92740755C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIEngine", "CIEngine\CIEngine.vcxproj", "{C62A696D-55FB-49A4-BE90-E5A42EC8D422}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C62A696D-55FB-49A4-BE90-E5A42EC8D422}.Debug|x64.ActiveCfg = Debug|x64
+		{C62A696D-55FB-49A4-BE90-E5A42EC8D422}.Debug|x64.Build.0 = Debug|x64
+		{C62A696D-55FB-49A4-BE90-E5A42EC8D422}.Release|x64.ActiveCfg = Release|x64
+		{C62A696D-55FB-49A4-BE90-E5A42EC8D422}.Release|x64.Build.0 = Release|x64
+		{1D6A5053-D791-4343-B670-6FF92740755C}.Debug|x64.ActiveCfg = Debug|x64
+		{1D6A5053-D791-4343-B670-6FF92740755C}.Debug|x64.Build.0 = Debug|x64
+		{1D6A5053-D791-4343-B670-6FF92740755C}.Release|x64.ActiveCfg = Release|x64
+		{1D6A5053-D791-4343-B670-6FF92740755C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84B3A1DE-D7AA-457F-8166-AEA4DA283C1F}
+	EndGlobalSection
+EndGlobal
