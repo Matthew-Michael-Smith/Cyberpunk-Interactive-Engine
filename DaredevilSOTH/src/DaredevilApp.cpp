@@ -15,7 +15,7 @@ public:
 
 };
 
-static CIEngine::Application* CIEngine::CreateApplication()
+CIEngine::Application* CIEngine::CreateApplication()
 {
 	return new DaredevilSOTH();
 }
