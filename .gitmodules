@@ -1,6 +1,3 @@
-[submodule "CIEngine/vendor/spdlog"]
-	path = CIEngine/vendor/spdlog
-	url = https://github.com/gabime/spdlog
-[submodule "CIEngine/Vendor/Spdlog"]
-	path = CIEngine/Vendor/Spdlog
+[submodule "CIEngine/vendors/spdlog"]
+	path = CIEngine/vendors/spdlog
 	url = https://github.com/gabime/spdlog

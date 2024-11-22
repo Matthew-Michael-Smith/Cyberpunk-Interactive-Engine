@@ -27,6 +27,7 @@ project "CIEngine"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendors/spdlog/include"
 	}
 
