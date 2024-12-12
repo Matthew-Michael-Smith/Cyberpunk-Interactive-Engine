@@ -1,3 +1,58 @@
-[submodule "CIEngine/vendors/spdlog"]
-	path = CIEngine/vendors/spdlog
-	url = https://github.com/gabime/spdlog
+[submodule "CIEngine/vendor/spdlog"]
+	path = CIEngine/vendor/spdlog
+	url = ../../gabime/spdlog.git
+	branch = v1.x
+[submodule "CIEngine/vendor/GLFW"]
+	path = CIEngine/vendor/GLFW
+	url = ../../TheCherno/glfw.git
+	branch = master
+[submodule "CIEngine/vendor/imgui"]
+	path = CIEngine/vendor/imgui
+	url = ../../TheCherno/imgui.git
+	branch = docking
+[submodule "CIEngine/vendor/glm"]
+	path = CIEngine/vendor/glm
+	url = ../../g-truc/glm.git
+	branch = master
+[submodule "CIEngine/vendor/yaml-cpp"]
+	path = CIEngine/vendor/yaml-cpp
+	url = https://github.com/thecherno/yaml-cpp
+[submodule "CIEngine/vendor/ImGuizmo"]
+	path = CIEngine/vendor/ImGuizmo
+	url = https://github.com/thecherno/imguizmo
+[submodule "CIEngine/vendor/Box2D"]
+	path = CIEngine/vendor/Box2D
+	url = https://github.com/thecherno/box2d
+[submodule "CIEngine/vendor/msdf-atlas-gen"]
+	path = CIEngine/vendor/msdf-atlas-gen
+	url = https://github.com/TheCherno/msdf-atlas-gen
+[submodule "CIEngine/vendors/GLFW/glfw"]
+	path = CIEngine/vendors/GLFW/glfw
+	url = https://github.com/TheCherno/glfw
+[submodule "CIEngine/vendors/glm"]
+	path = CIEngine/vendors/glm
+	url = https://github.com/g-truc/glm/
+[submodule "CIEngine/vendors/imgui"]
+	path = CIEngine/vendors/imgui
+	url = https://github.com/TheCherno/imgui/
+[submodule "CIEngine/vendors/imguizmo"]
+	path = CIEngine/vendors/imguizmo
+	url = https://github.com/TheCherno/imguizmo/
+[submodule "CIEngine/vendors/msdf-atlas-gen"]
+	path = CIEngine/vendors/msdf-atlas-gen
+	url = https://github.com/TheCherno/msdf-atlas-gen
+[submodule "CIEngine/vendors/yaml-cpp"]
+	path = CIEngine/vendors/yaml-cpp
+	url = https://github.com/TheCherno/yaml-cpp
+[submodule "CIEngine/vendors/Box2D"]
+	path = CIEngine/vendors/Box2D
+	url = https://github.com/TheCherno/Box2D
+[submodule "CIEngine/vendors/CMake"]
+	path = CIEngine/vendors/CMake
+	url = https://github.com/Kitware/CMake
+[submodule "CIEngine/vendors/OpenGL"]
+	path = CIEngine/vendors/OpenGL
+	url = https://github.com/TheCherno/OpenGL
+[submodule "CIEngine/vendors/Vulkan"]
+	path = CIEngine/vendors/Vulkan
+	url = https://github.com/SaschaWillems/Vulkan

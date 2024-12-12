@@ -1,6 +1,9 @@
-workspace "CIEngine"
+include "./vendor/premake/premake_customization/solution_items.lua"
+include "Dependencies.lua"
 
-	architecture "x64"
+workspace "CIEngine"
+	architecture "x86_64"
+	startproject "CIEngine-Dev"
 
 	configurations
 	{
@@ -9,99 +12,37 @@ workspace "CIEngine"
 		"Dist"
 	}
 
+	solution_items
+	{
+		".editorconfig"
+	}
+
+	flags
+	{
+		"MultiProcessorCompile"
+	}
+
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-project "CIEngine"
-	location "CIEngine"
-	kind "SharedLib"
-	language "C++"
+group "Dependencies"
+	include "vendor/premake"
+	include "CIEngine/vendors/Box2D"
+	include "CIEngine/vendors/GLFW"
+	include "CIEngine/vendors/Glad"
+	include "CIEngine/vendors/msdf-atlas-gen"
+	include "CIEngine/vendors/imgui"
+	include "CIEngine/vendors/yaml-cpp"
+group ""
 
-	targetdir ("bin/".. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/".. outputdir .. "/%{prj.name}")
+group "Core"
+	include "CIEngine"
+	include "CIEngine-ScriptCore"
+group ""
 
-	files
-	{
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
-	}
+group "Tools"
+	include "CIEngine-Dev"
+group ""
 
-	includedirs
-	{
-		"%{prj.name}/src",
-		"%{prj.name}/vendors/spdlog/include"
-	}
-
-	filter "system:windows"
-		cppdialect "C++17"
-		staticruntime "On"
-		systemversion "10.0.22621.0"
-
-	defines
-	{
-		"CIE_PLATFORM_WINDOWS",
-		"CIE_BUILD_DLL"
-	}
-	
-	postbuildcommands
-	{
-		("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/DaredevilSOTH")
-	}
-
-filter "configurations:Debug"
-	defines "CIE_DEBUG"
-	symbols "On"
-
-filter "configurations:Release"
-	defines "CIE_RELEASE"
-	optimize "On"
-
-filter "configurations:Dist"
-	defines "CIE_DIST"
-	optimize "On"
-
-project "DaredevilSOTH"
-	location "DaredevilSOTH"
-	kind "ConsoleApp"
-	language "C++"
-
-    targetdir ("bin/".. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/".. outputdir .. "/%{prj.name}")
-
-	files
-	{
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
-	}
-
-	includedirs
-	{
-		"CIEngine/vendors/spdlog/include",
-	    "CIEngine/src"
-	}
-
-	links
-	{
-		"CIEngine"
-	}
-
-	filter "system:windows"
-		cppdialect "C++17"
-		staticruntime "On"
-		systemversion "10.0.22621.0"
-
-	defines
-	{
-		"CIE_PLATFORM_WINDOWS"
-	}
-	
-filter "configurations:Debug"
-	defines "CIE_DEBUG"
-	symbols "On"
-
-filter "configurations:Release"
-	defines "CIE_RELEASE"
-	optimize "On"
-
-filter "configurations:Dist"
-	defines "CIE_DIST"
-	optimize "On"
+group "Misc"
+	include "DaredevilSOTH"
+group ""
