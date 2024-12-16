@@ -1,0 +1,2 @@
+C:\Users\smithmatt\source\repos\CIEngine\CIEngine-Dev\obj\Debug\CIEngine-Dev.csproj.AssemblyReference.cache
+C:\Users\smithmatt\source\repos\CIEngine\CIEngine-Dev\obj\Debug\CIEngine-Dev.csproj.CoreCompileInputs.cache
